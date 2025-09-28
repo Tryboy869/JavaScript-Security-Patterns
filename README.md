@@ -35,7 +35,7 @@ js-security-patterns/
 
 > **Secure coding patterns for JavaScript applications - Rust-level security with native JS syntax**
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-0.1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Security](https://img.shields.io/badge/security-validated-brightgreen)
 
