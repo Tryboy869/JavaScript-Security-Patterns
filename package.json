@@ -1,0 +1,39 @@
+{
+  "name": "js-security-patterns",
+  "version": "0.1.0",
+  "description": "Battle-tested security patterns for JavaScript applications - Rust-level security with native JS syntax",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/run-all-tests.js",
+    "benchmark": "node test/benchmark.js",
+    "security-audit": "node test/security-audit.js",
+    "lint": "node test/lint-security.js"
+  },
+  "keywords": [
+    "javascript",
+    "security",
+    "xss-prevention",
+    "input-validation",
+    "secure-coding",
+    "owasp",
+    "cybersecurity",
+    "patterns",
+    "best-practices"
+  ],
+  "author": "Nexus Studio <nexusstudio100@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tryboy869/js-security-patterns.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tryboy869/js-security-patterns/issues"
+  },
+  "homepage": "https://github.com/Tryboy869/js-security-patterns#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4"
+  }
+}
