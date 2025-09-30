@@ -199,6 +199,7 @@ runner.test('escapes HTML entities', () => {
     runner.assert(sanitized.includes('&quot;'));
 });
 
+// FIX: Utiliser sanitizeHTML au lieu de validateInput
 runner.test('handles mixed XSS vectors', () => {
     const attacks = [
         '<script>alert(1)</script>',
@@ -212,8 +213,10 @@ runner.test('handles mixed XSS vectors', () => {
     
     attacks.forEach(attack => {
         const sanitized = sanitizeHTML(attack);
-        runner.assert(!sanitized.includes('alert'), `Should sanitize: ${attack}`);
+        runner.assert(!sanitized.includes('alert'), `Should sanitize: ${sanitized}`);
         runner.assert(!sanitized.includes('<script'), `Should remove script in: ${attack}`);
+        runner.assert(!sanitized.includes('<iframe'), `Should remove iframe in: ${attack}`);
+        runner.assert(!sanitized.includes('javascript'), `Should remove javascript protocol in: ${attack}`);
     });
 });
 
