@@ -4,7 +4,11 @@
   "description": "Battle-tested security patterns for JavaScript applications - Rust-level security with native JS syntax",
   "main": "index.js",
   "scripts": {
-    "test": "node test/run-all-tests.js",
+    "test": "node examples/01-input-validation/test.js && node examples/02-xss-prevention/test.js && node examples/03-eval-alternatives/test.js",
+    "test:input": "node examples/01-input-validation/test.js",
+    "test:xss": "node examples/02-xss-prevention/test.js",
+    "test:eval": "node examples/03-eval-alternatives/test.js",
+    "test:all": "node test/run-all-tests.js",
     "benchmark": "node test/benchmark.js",
     "security-audit": "node test/security-audit.js",
     "lint": "node test/lint-security.js"
@@ -18,7 +22,12 @@
     "owasp",
     "cybersecurity",
     "patterns",
-    "best-practices"
+    "best-practices",
+    "code-injection",
+    "sanitization",
+    "eval-alternative",
+    "web-security",
+    "frontend-security"
   ],
   "author": "Nexus Studio <nexusstudio100@gmail.com>",
   "license": "MIT",
@@ -35,5 +44,10 @@
   },
   "devDependencies": {
     "benchmark": "^2.1.4"
+  },
+  "directories": {
+    "example": "examples",
+    "doc": "docs",
+    "test": "test"
   }
 }
