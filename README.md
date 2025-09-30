@@ -36,7 +36,7 @@ const result = eval(userInput);
 const result = secureEval(userInput, { Math });
 ```
 
-## Repository Structure targeted
+## Repository Structure (incomplete)
 
 ```
 js-security-patterns/
